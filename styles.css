@@ -227,8 +227,13 @@ section { padding-block: clamp(3rem, 8vw, 6rem); }
   padding: 0;
 }
 .site-nav a {
-  display: inline-block;
-  padding: 0.4rem 0.15rem;
+  /* A 0.95rem line with 0.4rem of padding is a ~28px target. Flex with a
+     44px minimum keeps the words exactly where they were and gives the
+     touch area the size Apple and WCAG ask for. */
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 0 0.15rem;
   color: var(--ink-secondary);
   text-decoration: none;
   font-size: 0.95rem;
@@ -548,8 +553,15 @@ td { color: var(--ink-secondary); }
   margin-bottom: 0.75rem;
 }
 .site-footer ul { list-style: none; padding: 0; margin: 0; }
-.site-footer li { margin-bottom: 0.35rem; }
-.site-footer a { color: var(--ink); text-decoration: none; }
+.site-footer li { margin-bottom: 0.1rem; }
+/* Same reasoning as the header nav: a footer link is a real target. */
+.site-footer a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  color: var(--ink);
+  text-decoration: none;
+}
 .site-footer a:hover { text-decoration: underline; }
 .site-footer__legal {
   margin-top: 2.5rem;
