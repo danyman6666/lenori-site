@@ -596,3 +596,21 @@ td { color: var(--ink-secondary); }
   .site-header, .site-footer__grid, .skip-link { display: none; }
   body { background: #fff; color: #000; }
 }
+
+/* ------------------------------------------------- spacing utilities */
+/*
+  These exist so no element needs a style="" attribute. That is what lets
+  the Content-Security-Policy drop 'unsafe-inline' from style-src: with an
+  inline style anywhere on the page, the policy has to allow every inline
+  style, and the directive stops meaning much.
+*/
+.mt-sm { margin-top: 1.5rem; }
+.mt-md { margin-top: 1.75rem; }
+.mt-lg { margin-top: 2rem; }
+.mt-xl { margin-top: 2.5rem; }
+.mb-0  { margin-bottom: 0; }
+.mb-xs { margin-bottom: 0.5rem; }
+.mb-lg { margin-bottom: 2rem; }
+.mi-auto { margin-inline: auto; }
+.fs-sm { font-size: 0.95rem; }
+.card__heading { margin-top: 0; font-size: 1.15rem; }

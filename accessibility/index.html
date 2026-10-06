@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self'; style-src 'self'; font-src 'self'; form-action 'none'; base-uri 'none'">
+<meta name="referrer" content="no-referrer">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Accessibility — Lenori</title>
+<meta name="description" content="How Lenori approaches accessibility on the web and in the app, what is implemented today, and how to report a problem.">
+<link rel="canonical" href="https://lenoriapp.com/accessibility/">
+<link rel="stylesheet" href="../styles.css">
+<link rel="icon" href="../images/favicon-64.png" sizes="any" type="image/png">
+<link rel="apple-touch-icon" href="../images/apple-touch-icon.png">
+<meta name="theme-color" content="#f4d9d3" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#241318" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Lenori">
+<meta property="og:title" content="Accessibility — Lenori">
+<meta property="og:description" content="How Lenori approaches accessibility, what is implemented, and how to report a problem.">
+<meta property="og:url" content="https://lenoriapp.com/accessibility/">
+<meta property="og:image" content="https://lenoriapp.com/images/og-card.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="The Lenori app icon: a soft letter L over a sunrise landscape.">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Accessibility — Lenori">
+<meta name="twitter:description" content="How Lenori approaches accessibility, what is implemented, and how to report a problem.">
+<meta name="twitter:image" content="https://lenoriapp.com/images/og-card.jpg">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="wrap site-header__inner">
+    <a class="brand" href="/">
+      <img src="../images/favicon-64.png" alt="" width="30" height="30">
+      Lenori
+    </a>
+    <nav class="site-nav" aria-label="Primary">
+      <ul>
+        <li><a href="/features/">Features</a></li>
+        <li><a href="/support/">Support</a></li>
+        <li><a href="/privacy/">Privacy</a></li>
+        <li><a href="/terms/">Terms</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main" class="doc">
+  <div class="wrap wrap--narrow">
+    <h1>Accessibility</h1>
+    <div class="doc__meta">
+      <p><strong>Last updated:</strong> 5 October 2026<br>
+      <strong>Reporting a problem:</strong> <a href="mailto:support@lenoriapp.com">support@lenoriapp.com</a></p>
+    </div>
+
+    <p class="lede">Lenori is built to be usable with the assistive technology
+      people already rely on. This page says what that means in practice, and
+      what we have actually implemented rather than what we aspire to.</p>
+
+    <h2 id="target">Our target</h2>
+    <p>We aim at <strong>WCAG 2.2 Level AA</strong> for this website, and at
+      Apple's accessibility guidance for the iOS app.</p>
+    <p>We do not claim conformance has been formally audited or certified, and
+      we have not been assessed by a third party. Where we fall short, we would
+      rather hear about it and fix it than publish a claim we cannot stand
+      behind.</p>
+
+    <h2 id="website">On this website</h2>
+    <p>Implemented and checked:</p>
+    <ul>
+      <li>Semantic HTML with one <code>h1</code> per page, a logical heading
+        order, and landmark regions.</li>
+      <li>A skip link to the main content on every page.</li>
+      <li>Visible focus indicators on every interactive element, and full
+        keyboard operation — there is nothing you can reach with a pointer that
+        you cannot reach with a keyboard.</li>
+      <li>Interactive targets of at least 44×44&nbsp;px.</li>
+      <li>Text contrast meeting AA on both the light and dark palettes.</li>
+      <li>Descriptive link text, and alt text on every image describing what it
+        shows.</li>
+      <li>Layout that reflows without horizontal scrolling down to 320&nbsp;px
+        and at 200% text zoom.</li>
+      <li>Respect for <em>Reduce Motion</em>; the site has no autoplay, no
+        parallax and no motion that conveys meaning.</li>
+      <li>Support for the system light and dark appearance.</li>
+      <li>No JavaScript, so nothing depends on scripting being available.</li>
+    </ul>
+
+    <h2 id="app">In the Lenori app</h2>
+    <ul>
+      <li><strong>VoiceOver</strong> — controls carry labels, values and hints.
+        A Lenori row announces its name and state; an app-icon tile announces
+        whether it is selected or locked.</li>
+      <li><strong>Dynamic Type</strong>, including the accessibility sizes,
+        with layouts that reflow rather than truncate.</li>
+      <li><strong>Reduce Motion</strong>, <strong>Reduce Transparency</strong>
+        and <strong>Increase Contrast</strong> are all respected.</li>
+      <li>Touch targets sized to Apple's 44&nbsp;pt guidance.</li>
+      <li>Full keyboard navigation on iPad.</li>
+      <li>English and French, both written rather than machine-translated.</li>
+    </ul>
+    <p>None of this is behind a purchase.</p>
+
+    <h2 id="known">Known limits</h2>
+    <ul>
+      <li>The app's screenshots on this site are images of the interface. Their
+        alt text describes what each screen shows, but the text inside a
+        screenshot is not selectable.</li>
+      <li>The site is published in English only. The app is available in
+        English and French.</li>
+    </ul>
+
+    <h2 id="report">Telling us about a problem</h2>
+    <p>If something here or in the app is unreachable, unreadable or
+      unusable with assistive technology, please write to
+      <a href="mailto:support@lenoriapp.com">support@lenoriapp.com</a>.</p>
+    <p>It helps if you can say which page or screen, what device and iOS
+      version you are using, which assistive technology is involved, and what
+      you expected to happen. We treat these as bugs.</p>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="site-footer__grid">
+      <div>
+        <h2>Lenori</h2>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/features/">Features</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Help</h2>
+        <ul>
+          <li><a href="/support/">Support</a></li>
+          <li><a href="/accessibility/" aria-current="page">Accessibility</a></li>
+          <li><a href="mailto:support@lenoriapp.com">support@lenoriapp.com</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Legal</h2>
+        <ul>
+          <li><a href="/privacy/">Privacy Policy</a></li>
+          <li><a href="/privacy/#choices">Privacy Choices</a></li>
+          <li><a href="/terms/">Terms of Use</a></li>
+          <li><a href="mailto:privacy@lenoriapp.com">privacy@lenoriapp.com</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Company</h2>
+        <ul>
+          <li><a href="mailto:admin@lenoriapp.com">admin@lenoriapp.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="site-footer__legal">
+      <p>Lenori is a product of <strong>DS Entertainment LLC</strong>.</p>
+      <p>© 2026 DS Entertainment LLC. All rights reserved.</p>
+      <p>Apple, iPhone, iPad, App Store and iCloud are trademarks of Apple Inc.,
+        registered in the U.S. and other countries. Lenori is not affiliated with
+        or endorsed by Apple Inc.</p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
