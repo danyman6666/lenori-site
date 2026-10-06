@@ -61,6 +61,7 @@ handling — not from a template. The features page describes what ships,
 including which themes are free and that Premium is not purchasable yet.
 Keep both honest: if the app changes, these change with it.
 
-Passages needing a lawyer's eye are marked `[needs legal review]` in
-`terms/index.html`, with a summary at the foot of that page, and in a closing
-note on `privacy/index.html`.
+The Terms page relies on Apple's Standard EULA for the app licence rather
+than restating it. Sections that would need facts the owner has not supplied —
+state of formation, mailing address, governing law, venue — are omitted rather
+than filled with guesses.

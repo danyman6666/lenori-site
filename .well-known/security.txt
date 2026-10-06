@@ -1,0 +1,8 @@
+# Security contact for lenoriapp.com and the Lenori iOS app.
+# Lenori is provided by DS Entertainment LLC.
+
+Contact: mailto:privacy@lenoriapp.com
+Expires: 2027-10-05T00:00:00.000Z
+Preferred-Languages: en
+Canonical: https://lenoriapp.com/.well-known/security.txt
+Policy: https://lenoriapp.com/privacy/

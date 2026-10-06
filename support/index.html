@@ -20,7 +20,11 @@
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="The Lenori app icon: a soft letter L over a sunrise landscape.">
+<meta property="og:locale" content="en_US">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Support — Lenori">
+<meta name="twitter:description" content="Help with Lenoris, momentum, notifications, iCloud, purchases, themes, icons and accessibility.">
+<meta name="twitter:image" content="https://lenoriapp.com/images/og-card.jpg">
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
@@ -45,8 +49,16 @@
 <main id="main" class="doc">
   <div class="wrap wrap--narrow">
     <h1>Support</h1>
-    <p class="lede">Email <a href="mailto:support@lenoriapp.com">support@lenoriapp.com</a>
-      and a person will answer. There is no ticket system and no chatbot.</p>
+    <div class="card card--glass" style="margin-bottom:2rem">
+      <h2 style="margin-top:0;font-size:1.15rem">Contact</h2>
+      <p style="margin-bottom:0.5rem"><strong>Email:</strong>
+        <a href="mailto:support@lenoriapp.com">support@lenoriapp.com</a></p>
+      <p style="margin-bottom:0.5rem"><strong>Privacy questions:</strong>
+        <a href="mailto:privacy@lenoriapp.com">privacy@lenoriapp.com</a></p>
+      <p style="margin-bottom:0">A person reads and answers these. There is no
+        ticket system and no chatbot.</p>
+    </div>
+    <p class="doc__meta"><strong>Last updated:</strong> 5 October 2026</p>
 
     <nav class="toc" aria-labelledby="toc-heading">
       <h2 id="toc-heading">On this page</h2>
@@ -56,7 +68,9 @@
         <li><a href="#reorder">Reordering, archiving and deleting</a></li>
         <li><a href="#momentum">Momentum and streaks</a></li>
         <li><a href="#notifications">Notifications</a></li>
+        <li><a href="#widgets">Widgets</a></li>
         <li><a href="#icloud">iCloud and being signed out</a></li>
+        <li><a href="#export">Exporting your data</a></li>
         <li><a href="#purchases">Purchases and Restore Purchases</a></li>
         <li><a href="#subscriptions">Cancelling a subscription</a></li>
         <li><a href="#appearance">Themes and app icons</a></li>
@@ -133,6 +147,25 @@
         have to grant it in Settings.</li>
     </ul>
 
+    <h2 id="widgets">Widgets</h2>
+    <p>Add a widget the usual way: long-press the Home Screen or Lock Screen,
+      tap <strong>+</strong> or <strong>Customise</strong>, find Lenori, and
+      pick a size.</p>
+    <p><strong>If a widget looks out of date:</strong> widgets are refreshed by
+      iOS on its own schedule, not continuously. Open Lenori once and the
+      widget will catch up. If it still looks wrong, remove the widget and add
+      it again.</p>
+    <p><strong>If a widget looks washed out</strong>, check the Home Screen
+      appearance — iOS re-tints every widget under the Tinted and Clear
+      appearances, and that is the system doing it rather than Lenori.</p>
+
+    <h2 id="export">Exporting your data</h2>
+    <p>Lenori can write your Lenoris and their completions out as CSV or JSON,
+      and read them back in. The export is in <strong>Settings</strong>; iOS
+      then asks where to save the file, so where it goes is your choice.</p>
+    <p>Export before deleting a Lenori you might want the history of later —
+      deleting one removes its completions too, and that cannot be undone.</p>
+
     <h2 id="icloud">iCloud and being signed out</h2>
     <p>Lenori syncs through <strong>your own private iCloud database</strong>.
       There is no Lenori account to create.</p>
@@ -152,12 +185,8 @@
       <strong>Settings → [your name] → iCloud → Manage Account Storage</strong>.</p>
 
     <h2 id="purchases">Purchases and Restore Purchases</h2>
-    <div class="notice">
-      <p><strong>Lenori Premium is not purchasable yet.</strong> The purchase
-        screen is switched off in released builds until the first
-        App&nbsp;Store version is ready. This section describes how it will
-        work.</p>
-    </div>
+    <p>Premium unlocks the twelve additional themes and all twenty alternate
+      app icons. It becomes available with the App&nbsp;Store release.</p>
     <p>Purchases are handled entirely by Apple through the App&nbsp;Store.
       Lenori never sees your payment details.</p>
     <p><strong>Restore Purchases</strong> is on the purchase screen. Use it
@@ -169,8 +198,13 @@
         purchase.</li>
       <li>You must be signed into the <strong>same Apple Account</strong> that
         made the purchase.</li>
-      <li>If Restore reports that nothing was found, you are almost certainly
-        signed into a different Apple Account.</li>
+      <li>If Restore reports that nothing was found, check the Apple Account
+        signed in on the device — it must be the one that made the purchase —
+        and check that you have a working connection. Then try Restore
+        Purchases again, and close and reopen the app. If access is still
+        missing, write to
+        <a href="mailto:support@lenoriapp.com">support@lenoriapp.com</a> and we
+        will help you work out what happened.</li>
       <li>A purchase made on one device unlocks the others automatically once
         Lenori next opens on them.</li>
     </ul>
@@ -189,10 +223,12 @@
       <li>Tap <strong>Subscriptions</strong>.</li>
       <li>Tap Lenori, then <strong>Cancel Subscription</strong>.</li>
     </ol>
+    <p>You can also manage subscriptions in your Apple Account on the web:
+      <a href="https://apps.apple.com/account/subscriptions" rel="noopener noreferrer">apps.apple.com/account/subscriptions</a>.</p>
     <p>You keep access until the end of the period you have already paid for.</p>
     <p><strong>Refunds</strong> are issued by Apple, not by DS Entertainment LLC.
       Request one at
-      <a href="https://reportaproblem.apple.com" rel="noopener">reportaproblem.apple.com</a>.</p>
+      <a href="https://reportaproblem.apple.com/" rel="noopener noreferrer">reportaproblem.apple.com</a>.</p>
 
     <h2 id="appearance">Themes and app icons</h2>
     <p><strong>Themes</strong> are in <strong>Settings → Appearance</strong>.
@@ -241,8 +277,20 @@
         numbers or anything else identifying your payment method — we cannot act
         on them, and Apple handles refunds.</li>
     </ul>
-    <p>Please do not include anything private from inside your Lenoris. We never
-      need it, and we would rather not receive it.</p>
+    <h3>Please do not send</h3>
+    <ul>
+      <li><strong>Passwords</strong> of any kind, including your Apple Account
+        password. Nobody from Lenori will ever ask for one.</li>
+      <li><strong>Payment-card numbers, receipts or billing details.</strong>
+        We cannot act on them, and Apple handles refunds.</li>
+      <li><strong>Sensitive personal information</strong>, including anything
+        private from inside your Lenoris. We never need it, and we would rather
+        not receive it.</li>
+    </ul>
+    <p>What happens to an email you do send us is described in the
+      <a href="/privacy/#choices">Privacy Choices</a> section of our
+      <a href="/privacy/">Privacy Policy</a>. Our
+      <a href="/terms/">Terms of Use</a> cover the rest.</p>
   </div>
 </main>
 
